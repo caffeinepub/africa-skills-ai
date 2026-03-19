@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    /* Primary: #0B5ED7 blue */
+    --primary: 0.452 0.215 255.5;
+    --primary-foreground: 0.99 0 0;
+    /* Secondary: #198754 green */
+    --secondary: 0.52 0.148 152;
+    --secondary-foreground: 0.99 0 0;
+    /* Backgrounds */
+    --background: 0.977 0 0;
+    --foreground: 0.18 0.01 255;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.01 255;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.01 255;
+    /* Muted */
+    --muted: 0.95 0.004 255;
+    --muted-foreground: 0.48 0.012 255;
+    --accent: 0.94 0.008 255;
+    --accent-foreground: 0.18 0.01 255;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.99 0 0;
+    /* Borders */
+    --border: 0.88 0.008 255;
+    --input: 0.88 0.008 255;
+    --ring: 0.452 0.215 255.5;
+    /* Charts */
+    --chart-1: 0.452 0.215 255.5;
+    --chart-2: 0.52 0.148 152;
+    --chart-3: 0.646 0.222 41.116;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    /* Sidebar */
+    --sidebar: 0.977 0 0;
+    --sidebar-foreground: 0.18 0.01 255;
+    --sidebar-primary: 0.452 0.215 255.5;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.94 0.008 255;
+    --sidebar-accent-foreground: 0.18 0.01 255;
+    --sidebar-border: 0.88 0.008 255;
+    --sidebar-ring: 0.452 0.215 255.5;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, oklch(0.452 0.215 255.5) 0%, oklch(0.35 0.18 270) 100%);
+  }
+  .section-alt {
+    background-color: oklch(0.963 0.005 255);
+  }
+}
